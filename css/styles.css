@@ -186,7 +186,7 @@ ol {
 
 .team {
   background-color: var(--background-btn-kolor);
-  padding: 120px;
+  padding: 120px 0;
 }
 
 .team-foto {
