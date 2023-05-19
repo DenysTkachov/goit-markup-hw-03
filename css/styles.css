@@ -30,6 +30,12 @@ ol {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* .box {
   background-color: tomato;
 } */
@@ -40,6 +46,7 @@ ol {
   padding-right: 15px;
   margin: 0 auto;
 }
+
 
 .list {
   list-style: none;
@@ -61,7 +68,9 @@ ol {
 /* Page header */
 
 .header {
-  padding: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 
 .header-logo {
@@ -73,7 +82,7 @@ ol {
   letter-spacing: 0.03em;
   color: var(--text-logo-color);
   text-transform: uppercase;
-}
+ }
 
 .header-logo-span {
   color: var(--color-title);
@@ -102,6 +111,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-main);
+  gap: 30px;
 }
 
 .header-item-contakt:hover,
@@ -109,21 +119,39 @@ ol {
   color: var(--color-link);
 }
 
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header-navigation {
+  display: flex;
+  gap: 78px;
+}
+
+.header-container {
+  display: flex;
+  gap: 332px;
+}
+
 /* <!-- Main contain --> */
 
 .main-contain {
   background-color: var(--background-color-main-contain);
   text-align: center;
-  padding: 188px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-contain-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--background-color);
   margin-bottom: 48px;
+  max-width: 496px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .main-contain-btn {
@@ -139,6 +167,7 @@ ol {
   border-radius: 4px;
   padding: 16px 32px;
   text-align: center;
+  margin-top: 64px;
 }
 
 .main-contain-btn:hover,
@@ -147,6 +176,11 @@ ol {
 }
 
 /* <!-- Our advantages --> */
+
+.advantages {
+  padding-top: 95px;
+  padding-bottom:  120px;
+}
 
 .advantages-title {
   font-weight: 500;
@@ -161,6 +195,9 @@ ol {
   font-size: 20px;
   letter-spacing: 0.02em;
   color: var(--color-title);
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .advantages-text {
@@ -181,6 +218,16 @@ ol {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+.activity {
+  padding-bottom: 120px;
+}
+
+.activity-list {
+  display: flex;
+  gap: 24px;
+}
+
+
 
 /* Team */
 
@@ -189,9 +236,7 @@ ol {
   padding: 120px 0;
 }
 
-.team-foto {
-  margin-bottom: 32px;
-}
+
 
 .team-title {
   font-size: 36px;
@@ -222,12 +267,26 @@ ol {
   color: var(--color-main);
 }
 
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.employees {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+
 /* <!-- Footer -->  */
 
 .footer {
   background-color: var(--background-color-main-contain);
-  padding: 100px;
+  padding: 100px 0;
 }
+
+
+
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -238,20 +297,21 @@ ol {
   letter-spacing: 0.03em;
   color: var(--text-logo-color);
   text-transform: uppercase;
-  
+  display: inline-block;
+  margin-bottom: 17.5px;
 }
 
 
 .footer-logo-span {
   color: var(--background-btn-kolor);
-  margin-bottom: 16px;
-  }
+}
 
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--background-btn-kolor);
+  max-width: 264px;
 }
 
 /* <!-- Portfolio --> */
@@ -269,7 +329,6 @@ ol {
   overflow: hidden;
 }
 
-
 .portfolio-btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -284,7 +343,10 @@ ol {
   cursor: pointer;
   background-color: var(--background-btn-kolor);
   text-decoration: none;
-  }
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 24px;
+}
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -292,14 +354,20 @@ ol {
   color: var(--background-color);
 }
 
-
 .portfolio-list-first {
   list-style: none;
-  margin-bottom: 72px;
+  display: flex;
+  gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  margin: 0 auto;
+  justify-content: center;
 }
 .portfolio-list {
   list-style: none;
-  }
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .portfolio-title {
   font-weight: 500;
@@ -319,7 +387,10 @@ ol {
 
 .portfolio.link {
   text-decoration: none;
-  }
+}
 .portfolio-foto {
   margin-bottom: 32px;
+}
+.description {
+  padding: 32px 0;
 }
