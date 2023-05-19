@@ -63,15 +63,14 @@ img {
   --color-title: #2e2f42;
   --color-main: #434455;
   --color-link: #404bbf;
+  --color-border: #e7e9fc;
 }
 
 /* Page header */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: block;
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .header-logo {
@@ -137,6 +136,10 @@ img {
 }
 
 .header-list {
+  padding: 24px 0;
+}
+
+.header-item {
   padding: 24px 0;
 }
 
@@ -347,6 +350,11 @@ img {
   overflow: hidden;
 }
 
+
+.portfolio {
+  padding: 96px 0 120px;
+}
+
 .portfolio-btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -362,24 +370,24 @@ img {
   background-color: var(--background-btn-kolor);
   text-decoration: none;
   border-radius: 4px;
-  border: 0;
   padding: 12px 24px;
+  border: 1px solid var(--color-border);
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--color-link);
   color: var(--background-color);
+  border: 1px solid transparent;
 }
 
 .portfolio-list-first {
   list-style: none;
   display: flex;
-  gap: 24px;
-  padding-top: 96px;
-  padding-bottom: 72px;
-  margin: 0 auto;
+  margin-bottom: 72px;
   justify-content: center;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-list {
   list-style: none;
@@ -410,5 +418,6 @@ img {
   margin-bottom: 32px;
 }
 .description {
-  padding: 32px 0;
+  border: 1px solid var(--color-border);
+  padding: 32px 16px
 }
