@@ -386,6 +386,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-title {
@@ -421,5 +422,5 @@ img {
 
 .portfolio-item {
   column-gap: 24px;
-  row-gap: 48px;
+  
 }
